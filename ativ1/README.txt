@@ -1,3 +1,10 @@
+Medidas:
+Altura 17,25 cm
+Raio 3,5 cm
+Diametro 7 cm
+200 ml de água
+2,9 cm de água
+
 Bisseção
 
 1. Inicialização
