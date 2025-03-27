@@ -58,3 +58,53 @@ Incrementa o contador de iterações.
 5. Verificação final
 
 Se a precisão foi alcançada, condErro recebe 0 (indica sucesso), caso contrário, mantém 1 (indica erro ou parada por iteração máxima)
+
+-----
+
+Newton Raphson
+
+1. A Função newtonMethod
+
+Essa função recebe os seguintes parâmetros:
+
+f: a função cuja raiz queremos encontrar.
+
+df: a derivada de f, usada para calcular o próximo valor de x.
+
+x0: a estimativa inicial para a raiz.
+
+toler: a tolerância para a precisão da raiz.
+
+iterMax: o número máximo de iterações permitidas.
+
+O algoritmo funciona assim: 
+
+1-Inicializa x com o valor inicial x0.
+2-Entra em um loop até atingir o número máximo de iterações (iterMax).
+3- Calcula o valor da função f(x) e sua derivada df(x).
+4-Se a derivada for zero (df(x) == 0), o método para, pois dividir por zero não é possível.
+5-Calcula o próximo valor de x com a fórmula do método de Newton.
+6-Se o deslocamento Δx e f(x) forem menores que a tolerância, o algoritmo para.
+7-Retorna o valor final de x, o número de iterações e uma variável de controle de erro.
+
+--
+2. A Função f(x)
+A função que queremos encontrar a raiz:
+
+f(x)=x³−4x−9
+--
+3. A Função df(x)
+A derivada de f(x), necessária para o cálculo do método de Newton:
+
+f′(x)=3x²−4
+--
+4. Execução do Algoritmo
+
+O código executa o método de Newton-Raphson com:
+Estimativa inicial x0 = 2
+
+Tolerância 0.0001
+
+Máximo de 5 iterações.
+
+O resultado final é exibido no console.
